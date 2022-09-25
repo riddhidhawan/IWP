@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins';
+  background: radial-gradient(104.93% 104.93% at 48.51% 102.83%, #151515 0%, #000000 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+ min-height: 100vh;
+
+}
+
+.signup-head{
+  color: white;
+ font-size: 3rem;
+ font-family: 'Poppins';
+font-weight: 600;
+padding-left: 10vw;
+}
+
+.fg label{
+  font-size: 1.4rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+  text-align: right;
+}
+
+.form-inp {
+   border: none;
+   border-bottom: 2px solid #ffffff;
+    background: transparent;
+    color: white;
+    width: 60%;
+}
+
+.form-inp:focus {
+  outline: none;
+}
+
+select, input[type="checkbox"], input[type="radio"] {
+  /* -webkit-border-radius:0; */
+  -moz-border-radius:0; 
+  border-radius:0;
+  -webkit-appearance:none;
+  outline:none;
+}
+
+
+
+input[type=checkbox] + label
+ {
+  position: relative;
+  padding: 0rem 0 0 3rem;
+  user-select: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  input[type=checkbox] + label
+ {
+   margin: 5px 2px;
+}
+}
+  
+
+
+/* 
+input[type=checkbox] + label:before,
+input[type=radio] + label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 2px solid #ffffff;
+  border-radius: 0.55rem;
+  background: transparent;
+  text-align: center;
+  transition: background 200ms ease-out;
+} */
+/* input[type=checkbox] + label:after, */
+/* input[type=radio] + label:after {
+  content: "";
+  position: absolute;
+  transform: scale(0);
+  transition: transform 200ms ease-out;
+} */
+/* 
+input[type=checkbox] + label:after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0.65rem;
+  top: 0.25rem;
+  width: 0.5rem;
+  height: 1rem;
+  opacity: 0;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  transform: rotate(45deg);
+  transition: border-color 0.3s ease;
+}
+input[type=checkbox]:checked + label:before {
+  content: "";
+  background: #1571E3;
+} */
+/* input[type=checkbox]:checked + label:after {
+  content: "";
+  opacity: 1;
+   */
+/* } */
+
+
+
+.rounded-3 {
+  border-radius: 25px;
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid #1571E3 !important;
+  padding: 5px 25px;
+  margin-right: 20px;
+}
+
+.rounded-3:hover {
+  background: #1571E3 !important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid #1571E3 !important;
+}
+
+@media (max-width: 768px) {
+  .form-inp {
+    width: 100%;
+  }
+
+  .signup-head{
+    font-size: 2rem;
+  }
+
+  .fg label{
+    font-size: 1.2rem;
+  }
+  
+}
+
+.inst-container {
+  color: #fff;
+}
+
+.inst-container ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.hero-login {
+  float: right;
+  padding: 0px 100px;
+  animation-name: hero-float2;  
+  animation-duration: 4s;        
+  animation-iteration-count: infinite; 
+}
+
+@keyframes hero-float2 {
+  0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.hero-login img {
+  height: 20rem;
+  border-radius: 50%;
+  margin-top: -160px;
+  padding-right: 40px;
+  overflow-y: hidden;
+}
+
+.verti-dash {
+   height: 200px;
+   width: 2px;
+  padding: 10px 0px;
+   border-right: 1px solid #545454;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-login {
+    float: none;
+    padding: 0px 65px;
+  }
+
+  .hero-login img {
+    height: 15rem;
+    border-radius: 50%;
+    margin-top: auto;
+    padding-right: 40px;
+    overflow-y: hidden;
+    margin-left: 70px;
+  }
+  
+}
+
+
+.hero-sign {
+  float: right;
+  padding: 0px 100px;
+  animation-name: hero-float2;  
+  animation-duration: 4s;        
+  animation-iteration-count: infinite; 
+}
+
+.hero-sign img {
+  height: 20rem;
+  border-radius: 50%;
+  margin-top: -460px;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 980px) {
+  .hero-sign {
+    float: none;
+    padding: 0px 65px;
+  }
+
+  .hero-sign img {
+    height: 15rem;
+    border-radius: 50%;
+    margin-top: auto;
+    overflow-y: hidden;
+  }
+
+
+  
+}
+
+.hero-inst {
+  float: right;
+  padding: 0px 100px;
+  animation-name: hero-float2;  
+  animation-duration: 4s;        
+  animation-iteration-count: infinite; 
+}
+
+.hero-inst img {
+  height: 20rem;
+  border-radius: 50%;
+  margin-top: -460px;
+  margin-right: -90px;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 980px) {
+  .hero-inst {
+    float: none;
+    padding: 0px 65px;
+  }
+
+  .hero-inst img {
+    height: 15rem;
+    border-radius: 50%;
+    margin-top: auto;
+    margin-right: auto;
+    overflow-y: hidden;
+  }
+
+
+  
+}
+
+.und {
+  border-bottom: #1571E3 solid 8px;  
+}
+
+
+#scroll-container {
+  color:#fff;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.typingEffect6 {
+  padding-left: 90px;
+  border-right: solid 10px #1571E3;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  color: #1571E3;
+}
+ 
+/* Animation */
+.typingEffect6 {
+  animation: animated-text-effect 4s linear 1s 1 normal both,
+    animated-cursor 600ms linear infinite;
+}
+ 
+/* text animation */
+ 
+@keyframes animated-text-effect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 550px;
+  }
+}
+ 
+/* cursor animations */
+ 
+@keyframes animated-cursor {
+  from {
+    border-right-color: #1571E3;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+

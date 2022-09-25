@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CCS || Portal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+
+  <!-- Stylesheet for Custon CSS -->
+  <link rel="stylesheet" href="D:\IWP\css\style.css" />
+  </head>
+
+     <!-- Bootstrap CSS -->
+     <link
+     rel="stylesheet"
+     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+     crossorigin="anonymous"
+   
+
+  <body>
+    </script>
+
+    <div
+
+      style="background-color:black; border-bottom: 6px solid #40c0ff; text-align: justify; padding-top: 13px; padding-left: 10px;
+      font-family:Roboto;">
+      
+      <img src="D:\IWP\img\megaphone_front.png"width="100" height="100"/>
+  
+ 
+    
+      <div style="background-color: rgb(32, 32, 32); width:50%; margin: auto; padding-left: 20px; padding-top: 15px; ">
+        <form id="signup-form" action="action.php" method="get" >
+          <h1 style="color:white"><b>Sign Up</b></h1>  
+          <div class="form-row">
+            <div class="form-column pl-3 pr-3 pb-2 col-md-7">
+            
+              <div class="form-group col-md-10">
+                  <img id="icon" src="D:\IWP\img\icon\person-fill.png"style="padding-top: 13px; padding-left: 5px;" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name" 
+                  required
+                />
+              </div>
+
+              <div style="color:white ;">
+                <input type="radio" id="Gender" name="Gender_Specify" value="Male" >
+                 <label for="Gender">Male</label>
+                  <input type="radio" id="female" name="Gender_Specify" value="Female">
+                  <label for="female">Female</label>
+                  <input type="radio" id="noSpecify" name="Gender_Specify" value="Prefer Not to Say">
+                  <label for="noSpecify">Prefer Not to Say</label>
+              </div>
+              
+              <div >
+                  <img id="icon" src="D:\IWP\img\icon\numeric.png"style="padding-top: 13px; padding-left: 5px;"/>
+                <!-- <br> -->
+                  <input
+                  type="text"
+                  class="form-control"
+                  id="registrationNumber"
+                  placeholder="Registration Number"
+                  pattern="22[A-Za-z]{3}[0-9]{4}"
+                  required
+                />
+              </div>
+              
+              <div>
+                  <img id="icon" src="D:\IWP\img\icon\email_round.png"style="padding-top: 13px; padding-left: 5px;" />
+                
+                  <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="VIT Gmail"
+                  pattern=".+2022.*@vitstudent.ac.in$"
+                  required
+                /> 
+              </div>
+
+              <div>
+                  <img
+                  id="icon"
+                  src="D:\IWP\img\icon\mobile.png"
+                  style="padding-top: 13px; padding-left: 5px;"
+                />
+                
+                <input
+                  type="text"
+                  class="form-control"
+                  id="mobile"
+                  placeholder="Mobile Number (10 digits)"
+                  pattern="[0-9]{10}"
+                  required/>
+              </div>
+
+              <div >
+                  <img id="icon" src="D:\IWP\img\icon\asterisk.png" style="padding-top: 13px; padding-left: 5px;"/>
+                
+                  <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                  required
+                  minlength="6"/>
+              </div>
+
+              <div>
+                  <h5 for="branch" style="color:white;">Campus :</h5>
+                  <select id="branch" name="Branch_name">
+                      <optgroup label="Tamil Nadu">
+                        <option value="vellore">VIT Vellore</option>
+                        <option value="chennai">VIT Chennai</option>
+                      </optgroup>
+                      <optgroup label="Andhra Pradesh">
+                        <option value="amravati">VIT Amravati</option>
+                      </optgroup>
+                      <optgroup label="Madhya Pradesh">
+                        <option value="bhopal">VIT Bhopal</option>
+                      </optgroup>
+                    </select>
+              </div>
+
+
+              <div>
+                  <h5 for="dt" style="color:white;">Select Interview Date & Time :</h5>
+                  <br>
+                  <input type="date" id="dt" name="interview" required> 
+                  <input type="time" id="dt" name="interview" required>
+              </div>
+            <br>
+              <h5 for="myfile" style="color:white;">Upload Resume :</h5>
+              <input type="file" id="myfile" name="myfile">
+            <div style="color:white; ">
+              <h5>Tick your preferred domain(s):</h5>
+              <br />
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="TechnicalCSE"
+                  required
+                />
+                <label class="form-check-label" for="TechnicalCSE">
+                  Technical(CSE)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="TechnicalElectrical"
+                />
+                <label class="form-check-label" for="TechnicalElectrical">
+                  Technical(Electrical)
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Management" />
+                <label class="form-check-label" for="Management">
+                  Management
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Design" />
+                <label class="form-check-label" for="Design">Design</label>
+              </div>
+              <br>
+              <span style="font-size: 14px;font-style: italic;">
+                <span class="text-danger">
+                  *Select at least one preferred domain(s) before signing up.
+                </span>
+                <br />
+                You can choose more than one domain.
+              </span>
+        
+              <div >
+                  <br>
+              <center>
+                <button 
+                  type="submit"
+                  class="btn btn-primary"
+                  style="background-color: #39ade6; border-color: #39ade6; padding :0.4rem; margin:0.3rem">
+                
+                  Sign Up
+                </button>
+              </center>
+              </div>
+        
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

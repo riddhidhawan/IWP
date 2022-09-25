@@ -1,0 +1,19 @@
+/* style navbar for index.html page */
+
+
+/* navbar for index.html page */
+/* with glass morphism effect */
+/* navbar for index.html page */
+
+.navbar {
+  background-color: #1571E3;
+  border-bottom: 1px solid #1571E3;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
